@@ -1,0 +1,59 @@
+.border{
+  border: solid 1.5px white;
+  border-radius: 5px;
+  padding: 10px 15px;
+  color: white !important;
+  position: absolute;
+  top: 58%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+@keyframes border {
+  from {
+    opacity: 0;
+    left: 35rem;
+  }
+  to {
+    opacity: 1;
+    left: 4.5rem;
+  }
+}
+
+.jumbotron {
+    height: 100%;
+    min-height: 830px;
+    position: relative;
+    color: white;
+    padding-bottom: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin: 0 !important;
+    background-color: rgba(100, 100, 100, .5);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background-image: url(nano.jpg);
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+.face-container{
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translateX(-25%);
+}
+
+.face{
+  width: 50%;
+  border-radius: 15px;
+  border: solid 3px white;
+
+}

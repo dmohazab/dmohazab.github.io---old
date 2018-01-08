@@ -1,0 +1,50 @@
+h3 {
+  font-size: 4vw;
+}
+
+.paraSize{
+  font-size: 1.5vw;
+}
+.carousel{
+  opacity: 0.9;
+  border: solid 2px black;
+  border-radius: 12px;
+}
+
+.caption-background {
+  border: 2px solid white;
+  background-image: rgba(black, 0.2);
+  border-radius: 7px;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 10px 15px;
+}
+
+.carousel-control:focus, .carousel-control:hover{
+  color: #fff !important;
+  text-decoration: none !important;
+  outline: 0 !important;
+  opacity: .9 !important;
+}
+.carousel-control {
+position: absolute;
+top: 0;
+left: 0;
+bottom: 0;
+width: 15%;
+opacity: .5;
+filter: alpha(opacity=30);
+font-size: 20px;
+color: #fff;
+text-align: center;
+text-shadow: 0 1px 2px rgba(0,0,0,0.6);
+border-radius: 9px;
+}
+
+.carousel .item {
+  margin-top: 0px;
+}
+.carousel-inner > .item > img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
