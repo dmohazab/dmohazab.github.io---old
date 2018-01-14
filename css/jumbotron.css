@@ -148,8 +148,8 @@ a.fill-div {
 .expanding{
   -webkit-transition: width 0.4s ease-in-out;
   opacity: 0.5;
-  width: 25vw;
-  height: 120px;
+  width: 20vw;
+  height: 100px;
   background-color: none;
   position: relative;
   display: inline-block;
