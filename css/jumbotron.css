@@ -159,16 +159,6 @@ a.fill-div {
   border-radius: 5px;
 }
 
-.expanding:hover{
-  width: 35vw;
-  height: 120px;
-  background-color: none;
-  opacity: 0.2;
-  white-space: nowrap;
-}
-
-
-
 .border{
   border: solid 1.5px white;
   border-radius: 5px;
