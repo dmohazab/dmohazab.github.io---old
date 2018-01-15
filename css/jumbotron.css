@@ -1,3 +1,88 @@
+html{
+  overflow-x: hidden;
+}
+.movingstuff{
+  font-size: 4vw;
+  text-align: center;
+  transform: translateY(20%);
+  color: white;
+  font-family: 'Quattrocento Sans', sans-serif;
+  border-radius: 10px;
+  border: 2px solid white;
+  margin-right: 12vw;
+  margin-left: 12vw;
+  margin-bottom: 20px;
+}
+
+.accText{
+  -webkit-transition: opacity 0.5s ease-in-out;
+  opacity: 0;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-size: 2vw;
+  color: white;
+  font-family: 'Quattrocento Sans', sans-serif;
+  display: block;
+  overflow: hidden;
+  position: absolute;
+}
+.accText:hover{
+  display: block;
+  opacity: 1;
+  overflow: hidden;
+  text-align: center;
+}
+.accordion{
+  -webkit-transition:height, width 0.6s ease-in-out;
+  -webkit-transition: 0.6s ease-in-out;
+  width: 55vw;
+  height: 100px;
+  background-color: rgba(0, 0, 0, .5);
+  position: relative;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  border-radius: 10px;
+  border: 2px solid white;
+  margin-bottom: 15px;
+  display: inline-block;
+  background: url("25231.svg") rgba(0,0,0,.5);
+  background-repeat: no-repeat;
+  background-size: 50% 100%;
+  background-position: center;
+}
+
+.accordion:hover{
+  width: 800px;
+  height: 150px;
+  display: text;
+}
+.expanding{
+  -webkit-transition: height, width 0.6s ease-in-out;
+  -webkit-transition: 0.6s ease-in-out;
+  width: 55vw;
+  height: 100px;
+  background-color: rgba(0, 0, 0, .5);
+  position: relative;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  border-radius: 10px;
+  border: 2px solid white;
+  margin-bottom: 15px;
+  display: inline-block;
+  background: url("25231.svg") rgba(0,0,0,.5);
+  background-repeat: no-repeat;
+  background-size: 50% 100%;
+  background-position: center;
+}
+
+.expanding:hover{
+  width: 800px;
+  height: 200px;
+  display: text;
+}
+
+
 .box{
   display: inline-block grid;
   grid-column-gap: 0.6em;
@@ -117,7 +202,7 @@ a.fill-div {
     text-decoration: none;
 }
 .spacing{
-  margin-top: 60px;
+  margin-top: 30px;
 }
 
 .RobotCMajor{
@@ -126,39 +211,6 @@ a.fill-div {
   background: rgba(1, 1, 1, 0.5);
   transform: translateX(-50%);
 }
-
-.movingstuff{
-  font-size: 4vw;
-  text-align: center;
-  z-index:100;
-  transform: translateY(50%);
-  color: black;
-  font-family: 'Quattrocento Sans', sans-serif;
-
-}
-.githubpic{
-  width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-  transform: translateY(-70%);
-  opacity: 0.2;
-}
-
-.expanding{
-  -webkit-transition: width 0.4s ease-in-out;
-  opacity: 0.5;
-  width: 20vw;
-  height: 100px;
-  background-color: none;
-  position: relative;
-  display: inline-block;
-  margin-left: 45px;
-  white-space: nowrap;
-  border: solid 3.5px none;
-  border-radius: 5px;
-}
-
 .border{
   border: solid 1.5px white;
   border-radius: 5px;
