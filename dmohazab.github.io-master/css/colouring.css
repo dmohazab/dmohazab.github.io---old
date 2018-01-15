@@ -1,0 +1,94 @@
+
+/***Navbar Background Color, Border Removed ,Border Radius Sqaure***/
+
+.main-nav ul li:last-child {
+  border: solid 1px;
+  padding: 10px;
+}
+
+.navbar.navbar-inverse.navbar-fixed-top{
+  background: rgba(black, 0.5);
+  border: none;
+  border-radius: 0;
+}
+/***Link Color***/
+
+.navbar.navbar-inverse .navbar-nav > li > a {
+  color: #D8D7D7;
+}
+/***Link Color Hover Statr***/
+
+.navbar.navbar-inverse .navbar-nav > li > a:hover {
+  color: white;
+}
+/***Link Background and Color Active State***/
+
+.navbar.navbar-inverse .navbar-nav > .active,
+.navbar.navbar-inverse .navbar-nav > .active > a,
+.navbar.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar.navbar-inverse .navbar-nav > .active > a:focus {
+  background: #DBF022;
+  color: #66ccff;
+}
+/***Navbar Brand Link Color***/
+
+.navbar.navbar-inverse .navbar-brand {
+  color: #D8D7D7;
+}
+/***Navbar Brand Link Color Hover State***/
+
+.navbar.navbar-inverse .navbar-brand:hover {
+  color: white;
+}
+/***Dropdown Background Active State***/
+
+.navbar.navbar-inverse .nav li.dropdown.open > .dropdown-toggle,
+.navbar.navbar-inverse .nav li.dropdown.active > .dropdown-toggle,
+.navbar.navbar-inverse .nav li.dropdown.open.active > .dropdown-toggle {
+  background: #1976D2;
+  color: #081A32;
+}
+/***Dropdown-menu Background Color***/
+
+.navbar.navbar-inverse .dropdown-menu {
+  background: black;
+  border: none;
+  opacity: 0.6;
+}
+/***Dropdown-menu Color***/
+
+.navbar.navbar-inverse .dropdown-menu > li > a {
+  color: grey;
+}
+/***Dropdown-menu Color Hover and Focus State***/
+
+.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover{
+  background-color: transparent !important;
+}
+
+/***Toggle Button Hover and Focus State***/
+
+.navbar.navbar-custom .navbar-header .navbar-toggle:hover,
+.navbar.navbar-custom .navbar-header .navbar-toggle:focus {
+  background: transparent !important;
+  border: #f00;
+}
+
+.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover{
+  color: white !important;
+}
+/***Collapse Borders***/
+
+.navbar.navbar-custom .navbar-collapse {
+  border: none;
+}
+@media (max-width: 767px) {
+  .navbar.navbar-custom li.dropdown .dropdown-menu > li > a {
+    color: #f00;
+  }
+  /***Dropdown-menu Color Hover and Focus State***/
+  .navbar.navbar-custom li.dropdown .dropdown-menu > li > a:hover,
+  .navbar.navbar-custom li.dropdown .dropdown-menu > li > a:focus {
+    color: #ff0;
+  }
+}

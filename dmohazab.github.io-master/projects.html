@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/colouring.css">
+    <link rel="stylesheet" href="css/carousel.css">
+    <link rel="stylesheet" href="css/jumbotron.css">
+
+    <title>Daniel Mohazab</title>
+
+    <!-- Bootstrap -->
+
+  </head>
+  <body>
+
+    <header>
+      <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">Daniel Mohazab</a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="critique.pdf" target="_blank">RESUME</a></li>
+              <li><a href="projects.html">PROJECTS</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">CONTACT<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="https://github.com/dmohazab" target="_blank">GITHUB</a></li>
+                  <li><a href="https://www.linkedin.com/in/dmohazab/" target="_blank">LINKEDIN</a></li>
+                  <li><a href="mailto:dmohazab@edu.uwaterloo.ca">EMAIL</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+    </header>
+
+    <div class="jumbotron jumbotron-fluid vertical-center">
+      <div class="project-container">
+        <h1 class="border"> Projects </h1>
+      </div>
+      <section id="section05">
+        <a href="#arrowSlide" class="slide-section"><span></span></a>
+      </section>
+    </div>
+
+    <div class="titlePad" id="arrowSlide">
+      <h1 class="titleBorder"> <center> Robot C-Major <center> </h1>
+    </div>
+
+    <div id="myCarousel" class="carousel slide container">
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class = "active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+      </ol>
+
+      <div class = "carousel-inner">
+
+        <div class="item active">
+          <img src="img/chording.jpg" alt = "Chording" class = "img-responsive">
+          <div class="carousel-caption responsive caption-background">
+            <h3>Chording Mechanism</h3>
+            <p class="paraSize">Selectively chooses chords based on song file input and holds down power chords accordingly</p>
+          </div>
+        </div>
+
+        <div class="item">
+          <img src="img/chording2.jpg" alt = "Chording2" class = "img-responsive">
+          <div class="carousel-caption responsive caption-background">
+            <h3>Chording Mechanism View 2</h3>
+          </div>
+        </div>
+
+        <div class="item">
+          <img src="img/gantry.jpg" alt = "gantry" class = "img-responsive">
+          <div class="carousel-caption responsive caption-background">
+            <h3>Chord Committing Design</h3>
+            <p class="paraSize">Commits or releases with parallel timing to the strumming mechanism</p>
+          </div>
+        </div>
+
+        <div class="item">
+          <img src="img/strumandchording.jpg" alt = "strumandchording" class = "img-responsive">
+          <div class="carousel-caption responsive caption-background">
+            <h3>Strumming Mechanism</h3>
+            <p class="paraSize">Strums based on predeterimined song tempo</p>
+          </div>
+        </div>
+
+      </div>
+      <a class= "carousel-control left" href="#myCarousel" data-slide = "prev">
+        <span class = "icon-prev">
+        </span>
+      </a>
+
+      <a class= "carousel-control right" href="#myCarousel" data-slide = "next">
+        <span class = "icon-next">
+        </span>
+      </a>
+
+    </div>
+
+<br>
+  <div class="wrapper">
+    <div>
+      <video loop muted class="demoVideo" autoplay="autoplay">
+        <source src="css/videodemoday.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <div>
+      <p1 class="videoVid"> The strumming and chording mechanisms in action, as well as the UI
+      with song and user hint display for pause and termination features. </p1>
+    </div>
+  </div>
+
+  <div class="gantPic">
+    <div>
+      <p1 class = "videoWord">The chording mechanism developed to press chords down in
+        parallel time to each strum. Commit or release action created through a
+      worm drive controlled by a singular motor. Uses encoder values to press
+    down at the required pressure and release to a distance that allows it to be
+    recommitted with little delay.  </p1>
+  </div>
+    <div>
+      <img class="gantrypicture" src="css/gant.jpg" alt="gantry">
+    </div>
+  </div>
+
+  <div class="terminateButton">
+    <div class="box">
+      <p1 class = "terminationBut">
+        Termination button (right) and strumming mechanism (bottom). The termination button
+        is used to exit a song at any given time and recalibrate the robot to starting position
+        using inital encoder positioning. Strummer uses two plastic guitar picks angled at 45%
+        and a metal weight in order to strum with enough strength to produce sound.
+      </p1>
+      <image class="strum" src="css/strummer.jpg" alt="strumming">
+    </div>
+    <div>
+      <img class="termin" src="css/terminate.jpg" alt="terminate">
+  </div>
+</div>
+<br><br><br><br>
+
+<a href="https://github.com/dmohazab/Robot-C-Major">
+  <div class="spacing accordion">
+  <h1 class="movingstuff">RobotC-Major</h1>
+  <p class="accText">View the above project's source code on GitHub</p>
+</div>
+</a>
+
+<a href="https://github.com/dmohazab/AutoBalance">
+  <div class="expanding">
+  <h1 class="movingstuff">AutoBalance</h1>
+  <p class="accText"> An android application I created during
+  my time working at Scotiabank that helped reduce the time it took
+to balance when counting cash at the end of a work day. </p>
+</div>
+</a>
+
+<a href="https://github.com/dmohazab/dmohazab.github.io">
+<div class="accordion">
+  <h1 class="movingstuff">Portfolio</h1>
+  <p class="accText"> View the source code for this website. </p>
+</div>
+</a>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/arrow.js"></script>
+  </body>
+</html>
