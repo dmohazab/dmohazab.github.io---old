@@ -66,8 +66,6 @@
   background-color: transparent !important;
 }
 
-/***Toggle Button Hover and Focus State***/
-
 .navbar.navbar-custom .navbar-header .navbar-toggle:hover,
 .navbar.navbar-custom .navbar-header .navbar-toggle:focus {
   background: transparent !important;
