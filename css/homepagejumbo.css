@@ -27,10 +27,10 @@
  .description{
    animation: opacityChange 1s ease-in-out 0.5s forwards;
    opacity: 0;
-   transform: translateX(20%) translateY(-130%);
+   transform: translateX(20%) translateY(-95%);
    position: relative;
-   font-size: 30px;
-   width: 70%;
+   font-size: 3.0vw;
+   width: 75%;
    font-family: 'Open Sans Condensed', sans-serif;
 
    border-radius: 10px;
@@ -64,6 +64,8 @@ body {
   top: 25%;
   left: 50%;
   transform: translateX(-25%);
+  display: inline-block;
+  position: absolute;
 }
 
 .face{
