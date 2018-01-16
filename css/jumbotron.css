@@ -8,26 +8,59 @@ html{
   font-family: 'Quattrocento Sans', sans-serif;
   border-radius: 10px;
   border: 2px solid white;
-  margin-right: 16vw;
-  margin-left: 16vw;
+  margin-right: 12vw;
+  margin-left: 12vw;
   margin-bottom: 20px;
 }
 
 .accText{
+  -webkit-transition: opacity 0.5s ease-in-out;
+  opacity: 0;
   margin-left: 50%;
   transform: translateX(-50%);
   text-align: center;
-  font-size: 1.0em;
+  font-size: 1.1em;
   color: white;
   font-family: 'Quattrocento Sans', sans-serif;
   display: block;
   overflow: hidden;
   position: absolute;
 }
-
+.accText:hover{
+  display: block;
+  opacity: 1;
+  overflow: hidden;
+  text-align: center;
+}
 .accordion{
+  -webkit-transition:height, width 0.6s ease-in-out;
+  -webkit-transition: 0.6s ease-in-out;
+  width: 55vw;
+  height: 100px;
+  background-color: rgba(0, 0, 0, .5);
+  position: relative;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  border-radius: 10px;
+  border: 2px solid white;
+  margin-bottom: 15px;
+  display: inline-block;
+  background: url("25231.svg") rgba(0,0,0,.5);
+  background-repeat: no-repeat;
+  background-size: 50% 100%;
+  background-position: center;
+}
+
+.accordion:hover{
   width: 70vw;
   height: 150px;
+  display: text;
+}
+.expanding{
+  -webkit-transition: height, width 0.6s ease-in-out;
+  -webkit-transition: 0.6s ease-in-out;
+  width: 55vw;
+  height: 100px;
   background-color: rgba(0, 0, 0, .5);
   position: relative;
   margin-left: 50%;
@@ -42,22 +75,12 @@ html{
   background-position: center;
 }
 
-.expanding{
+.expanding:hover{
   width: 70vw;
   height: 200px;
-  background-color: rgba(0, 0, 0, .5);
-  position: relative;
-  margin-left: 50%;
-  transform: translateX(-50%);
-  border-radius: 10px;
-  border: 2px solid white;
-  margin-bottom: 15px;
-  display: inline-block;
-  background: url("25231.svg") rgba(0,0,0,.5);
-  background-repeat: no-repeat;
-  background-size: 50% 100%;
-  background-position: center;
+  display: text;
 }
+
 
 .box{
   display: inline-block grid;
@@ -203,6 +226,7 @@ a.fill-div {
     opacity: 1;
   }
 }
+
 .titleBorder{
   font-size: 6vw;
   border: solid 1.5px black;
