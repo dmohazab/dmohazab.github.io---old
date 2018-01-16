@@ -1,1 +1,85 @@
+.border{
+  animation: opacityChange 1s ease-in-out 0.5s forwards;
+  border: solid 1.5px white;
+  border-radius: 5px;
+  padding: 10px 15px;
+  color: white !important;
+  position: absolute;
+  top: 58%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  opacity: 0;
+}
 
+.jumbotron {
+    height: 100%;
+    min-height: 830px;
+    position: relative;
+    color: white;
+    padding-bottom: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin: 0 !important;
+    background-color: rgba(100, 100, 100, .5);
+}
+
+ .description{
+   animation: opacityChange 1s ease-in-out 0.5s forwards;
+   opacity: 0;
+   transform: translateX(20%) translateY(-95%);
+   position: relative;
+   font-size: 3.0vw;
+   width: 75%;
+   font-family: 'Open Sans Condensed', sans-serif;
+
+   border-radius: 10px;
+   border: 2px solid white;
+   padding: 10px;
+   background: rgba(0,0,0,.5);
+}
+
+@keyframes opacityChange {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background-image: url(nano.jpg);
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+.face-container{
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translateX(-25%);
+  display: inline-block;
+  position: absolute;
+}
+
+.face{
+  animation: slideOnLoad 1s ease-out 0.3s forwards;
+  width: 40%;
+  border-radius: 15px;
+  border: solid 3px white;
+}
+
+@keyframes slideOnLoad {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-75%);
+  }
+}
